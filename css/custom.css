@@ -1,0 +1,75 @@
+.mdl-layout__header{
+    color: #000;
+}
+
+.mdl-menu li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.mdl-navigation__2th{
+    font-size: smaller!important;
+    margin-left: 15px!important;
+}
+
+.intelshare-slide-section{
+    position: relative;
+    background: url('../images/intelshare.slide01.jpg') center 40% no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.f2n-section {
+    /*padding-top: 80px;*/
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.f2n-gray-light-bg {
+    background: #939393;
+}
+
+.f2n-gray-dark-bg {
+    background: #7b7b7b;
+}
+
+.f2n-text-center {
+    display: inline-block;
+    text-align: center;
+}
+
+.f2n-center {
+    height:100%;
+    text-align: center;
+}
+
+.f2n-no-margin {
+    margin: 0!important;
+}
+
+.f2n-padding-bottom{
+    padding-bottom: 80px;
+}
+
+.f2n-float-section {
+    margin-top: -80px;
+}
+
+.f2n-introduction {
+    position: relative;
+}
+
+.f2n-more-fab {
+    position: absolute;
+    top:38%;
+    right:-1.3%;
+    z-index: 3;
+    background: #64ffda !important;
+    color: black !important;
+}
+
+.f2n-float-right {
+    display: inline-block;
+    float: right;
+}
