@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mdl-intelshare.iml" filepath="$PROJECT_DIR$/.idea/mdl-intelshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/intelshare.iml" filepath="$PROJECT_DIR$/.idea/intelshare.iml" />
     </modules>
   </component>
 </project>
