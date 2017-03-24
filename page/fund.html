@@ -1,344 +1,263 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>智享网联--IntelShare</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- Animate.css -->
-		<link rel="stylesheet" href="../css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-		<link rel="stylesheet" href="../css/icomoon.css">
-	<!-- Simple Line Icons -->
-		<link rel="stylesheet" href="../css/simple-line-icons.css">
-	<!-- Bootstrap  -->
-		<link rel="stylesheet" href="../css/bootstrap.css">
-	<!-- Superfish -->
-		<link rel="stylesheet" href="../css/superfish.css">
-	<!-- Flexslider  -->
-		<link rel="stylesheet" href="../css/flexslider.css">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>智享网联--IntelShare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="../css/simple-line-icons.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Superfish -->
+    <link rel="stylesheet" href="../css/superfish.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../css/material.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-		<link rel="stylesheet" href="../css/style.css">
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="fh5co-wrapper">
+    <div id="fh5co-page">
+        <div id="fh5co-header">
+            <header id="fh5co-header-section">
+                <div class="container">
+                    <div class="nav-header">
+                        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                        <h1 id="fh5co-logo"><a href="../index.html">InterShare</a></h1>
+                        <!-- START #fh5co-menu-wrap -->
+                        <nav id="fh5co-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="fh5co-primary-menu">
+                                <li>
+                                    <a href="../index.html">首页</a>
+                                </li>
+                                <li><a href="upgrade.html">产业升级</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li>
+                                            <a href="upgrade.html#research_service">研发服务</a>
+                                        </li>
+                                        <li>
+                                            <a href="upgrade.html#financial_service">金融服务</a>
+                                        </li>
+                                        <li>
+                                            <a href="upgrade.html#wisdom_manage">智慧管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="active" href="fund.html">产业基金</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li>
+                                            <a href="zixun.html">产业资讯</a>
+                                        </li>
+                                        <li>
+                                            <a href="jijin.html">产业基金</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="modal"
+											   data-target="#research_modal_more">产研园区</a>
+                                        </li>
+                                    </ul>
 
-	<!-- Modernizr JS -->
-		<script src="../js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-		<script src="../js/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-		<div id="fh5co-header">
-			<header id="fh5co-header-section">
-				<div class="container">
-					<div class="nav-header">
-						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="../index.html">InterShare</a></h1>
-						<!-- START #fh5co-menu-wrap -->
-						<nav id="fh5co-menu-wrap" role="navigation">
-							<ul class="sf-menu" id="fh5co-primary-menu">
-								<li>
-									<a  href="../index.html">Home</a>
-								</li>
-								<li><a href="upgrade.html">产业升级</a>
-									<ul class="fh5co-sub-menu">
-									 	<li><a href="#">研发服务</a>
-										 	
-										</li>
-										<li><a href="#">金融服务</a>
-										 	
-										</li>
-										<li><a href="#">智慧管理</a>
-										 	
-										</li>
-									</ul>
-								</li>
-								<li><a class="active" href="fund.html">产业基金</a>
-									<ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html">产业资讯</a>
-										 	<ul class="fh5co-sub-menu">
-													<li><a href="#" target="_blank">咨询</a></li>
-													<li><a href="#" target="_blank">人物</a></li></li>
-													<li><a href="#" target="_blank">聚焦</a></li></li>
-											</ul>
-										</li>
-										<li><a href="left-sidebar.html">产业基金</a>
-										 	<ul class="fh5co-sub-menu">
-													<li><a href="#" target="_blank">股权</a></li>
-													<li><a href="#" target="_blank">并购</a></li></li>
-													<li><a href="#" target="_blank">孵化</a></li></li>
-											</ul>
-										</li>
-										<li><a href="left-sidebar.html">产研园区</a>
-										 	
-										</li>
-									</ul>
-
-								</li>
-								<li><a href="global.html" class="fh5co-sub-ddown">全球合作站</a>
-									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html">澳洲</a>
-										 	<ul class="fh5co-sub-menu">
-													<li><a href="#" target="_blank">咨询</a></li>
-													<li><a href="#" target="_blank">服务</a></li>
-													<li><a href="#" target="_blank">媒体</a></li>
-													<li><a href="#" target="_blank">论坛</a></li>
-											</ul>
-										</li>
-									 	<li>
-									 		<a href="right-sidebar.html">欧洲</a>
-									 	</li>
-										<li>
-											<a href="#" class="fh5co-sub-ddown">北美</a>
-										</li>
-									</ul>
-								</li>
-								<li><a href="contact.html">联系我们</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</header>		
-		</div>
-		<!-- end:fh5co-header -->
-<!--
-<aside id="fh5co-hero" class="js-fullheight">
-			<div class="flexslider js-fullheight">
-				<ul class="slides">
-					<li style="background-image: url(../images/slide_2.jpg);">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<h2>产业基金</h2>
-			   					<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	
-			  	</ul>
-		  	</div>
-		</aside>
--->
-<!--产业资讯-->
-<div id="fh5co-blog-section">
+                                </li>
+                                <li><a href="global.html" class="fh5co-sub-ddown">全球合作站</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li>
+                                            <a href="global.html#australia">澳洲</a>
+                                        </li>
+                                        <li>
+                                            <a href="global.html#europe">欧洲</a>
+                                        </li>
+                                        <li>
+                                            <a href="global.html#north_america">北美</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+       <!--产业升级导航页-->
+		<div id="fh5co-about-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<i class="sl-icon-note"></i>
-						<h2>产业资讯</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						<i class="sl-icon-wallet"></i>
+						<h2>产业基金</h2>
+						<p>国内知名新能源汽车生产厂商的高级管理人员组成，投资团队在清洁能源和清洁技术、高端装备制造领域的项目开发、运营管理和项目融资.</p><br><br>
 					</div>
 				</div>
 				<div class="row">
-
-					<div class="feature-full-2col">
-						<div class="blog-inner">
-							<div class="image" style="background-image: url(../images/project-1.jpg);">
+					<div class="col-md-4 text-center">
+						<div class="about-wrap">
+							<div class="about">
+								<img src="../images/author.jpg" alt="">
 							</div>
-							<div class="desc desc2">
-								<h3>#资讯# title1</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, 
-								in suscipit urna condimentum sed. </p>
-								<p><a href="#" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-							</div>
-						</div>
-						<div class="blog-inner">
-							<div class="image" style="background-image: url(../images/project-2.jpg);">
-							</div>
-							<div class="desc desc2">
-								<h3>#人物# title2</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. </p>
-								<p><a href="#" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
+							<div class="desc">
+								<h3>产业基金</h3>
+								<p class="pos">Developer</p>
+								<p>欧美成熟市场的并购基金运作、私募股权基金的管理及退出领域拥有共超过30年的丰富经验。</p>
+								<a class="btn btn-primary" href="jijin.html">Learn More</a>
 							</div>
 						</div>
 					</div>
-
-					<div class="feature-full-2col">
-						<div class="blog-inner">
-							<div class="image" style="background-image: url(../images/project-3.jpg);">
+					<div class="col-md-4 text-center">
+						<div class="about-wrap">
+							<div class="about">
+								<img src="../images/author2.jpg" alt="">
 							</div>
-							<div class="desc desc2">
-								<h3>#聚焦# title3</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, 
-								in suscipit urna condimentum sed. </p>
-								<p><a href="#" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-							</div>
-						</div>
-						<div class="blog-inner">
-							<div class="image" style="background-image: url(../images/project-4.jpg);">
-							</div>
-							<div class="desc desc2">
-								<h3>#资讯# title4</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. </p>
-								<p><a href="#" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
+							<div class="desc">
+								<h3>产业资讯</h3>
+								<p class="pos">最新新闻</p>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								<a class="btn btn-primary" href="zixun.html">Learn More</a>
 							</div>
 						</div>
 					</div>
-					<nav class="text-center" aria-label="Page navigation">
-		                <ul class="pagination pagination-sm">
-		                    <li onclick="prevPage()">
-		                        <a aria-label="Previous">
-		                            <span aria-hidden="true">&laquo;</span>
-		                        </a>
-		                    </li>
-		                    <li>
-		                        <a>1</a>
-		                    </li>
-		                    <li>
-		                        <a>2</a>
-		                    </li>
-		                    <li>
-		                        <a>3</a>
-		                    </li>
-		                    <li onclick="nextPage()">
-		                        <a href="#" aria-label="Next">
-		                            <span aria-hidden="true">&raquo;</span>
-		                        </a>
-		                    </li>
-		                </ul><!--/.pagination-->
-		            </nav>
-					
+					<div class="col-md-4 text-center">
+						<div class="about-wrap">
+							<div class="about">
+								<img src="../images/author.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h3>产研园区</h3>
+								<p class="pos">Developer</p>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								<a class="btn btn-primary btn-luxe-primary" data-toggle="modal"
+								   data-target="#research_modal_more">Learn More</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-<!--产业基金-->
-	<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-		<i class="sl-icon-note"></i>
-		<h2>产业基金</h2>
-		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-	
-		<div class="media"> <a href="#" class="pull-left"> <img src="../images/1.jpg" class="media-object"> </a>
-                <div class="media-body" contenteditable="true">
-                   <h4 class="media-heading">股权</h4>
-                   GP团队主要有来自知名跨国并购基金的高管人才，也有在海内外新能源行业域耕耘多年的产业专家
-                 </div>
-        </div>
-        <div class="media"> <a href="#" class="pull-left"> <img src="../images/1.jpg" class="media-object"> </a>
-                <div class="media-body" contenteditable="true">
-                   <h4 class="media-heading">并购</h4>
-                   金融服务能力：可汇集来自兄弟基金、银行、投行、信托、并购、租赁等业务板块的业务信息，并协调金融渠道，为被投企业提供综合性融资产品及服务。
-                 </div>
-        </div>
-        <div class="media"> <a href="#" class="pull-left"> <img src="../images/1.jpg" class="media-object"> </a>
-                <div class="media-body" contenteditable="true">
-                   <h4 class="media-heading">孵化</h4>
-                   欧美成熟市场的并购基金运作、私募股权基金的管理及退出领域拥有共超过30年的丰富经验。
-                 </div>
-        </div>
-	</div>
-<!--产研园区-->
-	<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-		<i class="sl-icon-note"></i>
-		<h2>产研园区</h2>
-		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
 
-		<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="span4">
-				<blockquote>
-					<p>
-						中美能源创新技术实验室。
-					</p> <small>关键词 <cite>中美</cite></small>
-				</blockquote> <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
-			</div>
-			<div class="span4">
-				<blockquote>
-					<p>
-						中澳能源创新技术实验室
-					</p> <small>关键词 <cite>中澳</cite></small>
-				</blockquote> <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
-			</div>
-			<div class="span4">
-				<blockquote>
-					<p>
-						中欧能源创新技术实验室
-					</p> <small>关键词 <cite>中欧</cite></small>
-				</blockquote> <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
-			</div>
-		</div>
-	</div>
-</div>
-<!--底部导航-->		
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
+		<div class="clearfix"></div>
 
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-4">
-								<h3>智享网联</h3>
-								<ul class="link">
-									<li><a href="#">产业升级</a></li>
-									<li><a href="#">产业基金</a></li>
-									<li><a href="#">全球合作站</a></li>
-								</ul>
-							</div>
-							<div class="col-md-6">
-								<h3>合作企业</h3>
-								<p>一些成果展示</p>
-								
-							</div>
-						</div>
+		<div class="modal fade" id="research_modal_more" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">全球创新园区</h4>
 					</div>
-					<div class="col-md-2">
-						<ul class="social-icons">
-							<li>
-								<a href="#"><i class="icon-twitter-with-circle"></i></a>
-								<a href="#"><i class="icon-facebook-with-circle"></i></a>
-								<a href="#"><i class="icon-instagram-with-circle"></i></a>
-								<a href="#"><i class="icon-linkedin-with-circle"></i></a>
+					<div class="modal-body">
+						<ul class="mdl-list">
+							<li class="mdl-list__item">
+								中美能源创新技术实验室
+							</li>
+							<li class="mdl-list__item">
+								中澳能源创新技术实验室
+							</li>
+							<li class="mdl-list__item">
+								中欧能源创新技术实验室
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-4">
-								<form action="#" id="form-subscribe">
-										<div class="form-field">
-											<input type="email" placeholder="Email Address" id="email">
-											<input type="submit" id="submit" value="Send">
-										</div>
-									</form>
-							</div>
-				</div>
-			</div>
-		</footer>
-	
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 
-	</div>
-	<!-- END fh5co-page -->
+		<br>
+        <br>
 
-	</div>
-	<!-- END fh5co-wrapper -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" style="margin-bottom: 20px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>智享网联</h3>
+                                <ul class="link">
+                                    <li><a href="#">产业升级</a></li>
+                                    <li><a href="#">产业基金</a></li>
+                                    <li><a href="#">全球合作站</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>合作企业</h3>
+                                <p>一些成果展示</p>
 
-	<!-- jQuery -->
+                            </div>
+                        </div>
+                    </div>
 
-		<script src="../js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-		<script src="../js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-		<script src="../js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-		<script src="../js/jquery.waypoints.min.js"></script>
-	<!-- Superfish -->
-		<script src="../js/hoverIntent.js"></script>
-		<script src="../js/superfish.js"></script>
-	<!-- Flexslider -->
-		<script src="../js/jquery.flexslider-min.js"></script>
-	<!-- Stellar -->
-		<script src="../js/jquery.stellar.min.js"></script>
-	<!-- Counters -->
-		<script src="../js/jquery.countTo.js"></script>
+                    <div class="col-md-4" style="margin-bottom: 20px;">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                                <a href="#"><i class="icon-linkedin-with-circle"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="mdl-button mdl-js-button mdl-button--fab" id="gototop">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </button><!--#gototop-->
+                    </div>
+                </div>
 
-	<!-- Main JS (Do not remove) -->
-		<script src="../js/main.js"></script>
+                <br>
+                <small>&copy; 2017 intelshare | power by: Four2Nine. All Rights Reserved.</small>
+            </div>
+        </footer>
 
-	</body>
+    </div>
+    <!-- END fh5co-page -->
+
+</div>
+<!-- END fh5co-wrapper -->
+
+<!-- jQuery -->
+
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Superfish -->
+<script src="../js/hoverIntent.js"></script>
+<script src="../js/superfish.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- Stellar -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Counters -->
+<script src="../js/jquery.countTo.js"></script>
+<script src="../js/material.min.js"></script>
+<!-- Main JS (Do not remove) -->
+<script src="../js/main.js"></script>
+
+</body>
 </html>

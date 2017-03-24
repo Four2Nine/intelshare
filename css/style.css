@@ -11,6 +11,10 @@
 *	Edit this section
 *
 * ======================================================= */
+*{
+  font-family: "Adobe 黑体 Std R", sans-serif;
+}
+
 body {
   font-family: "Open Sans", Arial, serif;
   line-height: 1.8;
@@ -610,7 +614,7 @@ figure {
 }
 
 #fh5co-hero {
-  min-height: 450px;
+  min-height: 700px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-hero .btn {

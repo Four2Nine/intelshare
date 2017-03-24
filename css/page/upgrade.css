@@ -2,9 +2,21 @@
 upgrade.html
 */
 
+.mdl-card__title,
+.mdl-card__supporting-text,
+.panel > .mdl-list .mdl-list__item {
+    color: #fff;
+    line-height: 1.2em;
+}
+
 .financial-panel {
     border: 1px solid #fff;
     background: transparent;
+}
+
+.label {
+    font-style: normal !important;
+    font-weight: normal !important;
 }
 
 .media-body {
@@ -15,6 +27,53 @@ upgrade.html
     color: #000;
 }
 
-#sub-content {
+.overview {
+    background: rgba(0,0,0,.5);
+    margin-top:100px;
+    padding:15px;
+    border-radius: 5px;
+}
 
+.overview h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+.overview p {
+    color: #f8f8f8;
+    font-weight:lighter;
+}
+
+.f2n-band {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #37474f;
+    padding:40px 20px;
+}
+
+.f2n-band h3,
+.f2n-band p{
+    color: #fff;
+    text-align: left;
+}
+
+.f2n-section {
+    /*padding-top: 80px;*/
+    position: relative;
+    min-height:500px;
+}
+
+.research-bg{
+    background: url(../../images/slide_2.jpg) fixed;
+}
+
+.financial-bg{
+    background: url(../../images/wear.png) fixed;
+    height:900px;
+}
+
+#research_modal_more{
+    margin-top: 100px;
 }
