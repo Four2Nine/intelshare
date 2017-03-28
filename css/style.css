@@ -628,7 +628,7 @@ figure {
 }
 
 #fh5co-hero {
-  min-height: 700px;
+  min-height: 587px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-hero .btn {
@@ -912,6 +912,7 @@ figure {
   padding: 70px 25px 25px 25px;
   border: 2px solid rgba(45, 64, 89, 0.1);
   position: relative;
+  min-height: 380px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1359,6 +1360,7 @@ figure {
 }
 
 .about-wrap {
+  min-height: 405px;
   border: 2px solid rgba(45, 64, 89, 0.1);
   padding: 100px 30px 30px;
   position: relative;
@@ -1366,7 +1368,15 @@ figure {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  position: relative;
 }
+
+.about-wrap>.desc>.btn-primary{
+  position: absolute;
+  bottom:20px;
+  left:34%;
+}
+
 @media screen and (max-width: 992px) {
   .about-wrap {
     margin-bottom: 6em;
@@ -1571,7 +1581,7 @@ figure {
 }
 
 #footer {
-  padding: 7em 0;
+  padding: 40px 0 20px 0;
   float: left;
   width: 100%;
   background: rgba(21, 31, 44, 0.1);
