@@ -1,0 +1,124 @@
+/*需求提交*/
+.from-box h2 {
+    font-size: 22px;
+    color: #333;
+    padding: 6px 0 28px;
+    font-weight: 400;
+}
+
+.from-box h2, .text-align {
+    text-align: center;
+}
+
+.from-box .input-box {
+    width: 490px;
+    margin: 0 auto;
+}
+
+.from-box .input-box ul li {
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+blockquote, body, button, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, ol, option, p, pre, select, td, textarea, th, ul {
+    padding: 0;
+    margin: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -moz-tap-highlight-color: rgba(255, 255, 255, 0);
+    -ms-tap-highlight-color: rgba(255, 255, 255, 0);
+    -o-tap-highlight-color: rgba(255, 255, 255, 0);
+    font: 12px/20px 'PingFang SC', '微软雅黑', arial, Regular;
+}
+
+.from-box .input-box ul .left {
+    width: 70px;
+    float: left;
+    text-align: right;
+    color: #666;
+    line-height: 30px;
+}
+
+.from-box .input-box ul .right {
+    width: 390px;
+    float: right;
+    text-align: left;
+}
+
+.from-box .input-box ul .right input {
+    height: 46px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 13px;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.from-box .input-box ul .right textarea {
+    resize: none;
+    width: 100%;
+    height: 130px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+    padding: 8px;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=text], textarea {
+    -webkit-appearance: none;
+}
+
+.clearFix:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.row-c {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hidden, .hiddenhasshow {
+    display: none;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=text] {
+    -webkit-appearance: none;
+    outline: 0;
+}
+
+textarea {
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    flex-direction: column;
+    cursor: auto;
+    white-space: pre-wrap;
+}
+
+input {
+    -webkit-rtl-ordering: logical;
+}
+
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+}
+
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}

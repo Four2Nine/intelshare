@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="../css/material.min.css">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/page/upgrade.css">
+    <link rel="stylesheet" href="../css/page/zhihui.css">
 
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
@@ -52,7 +52,7 @@
                 <div class="container">
                     <div class="nav-header">
                         <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                        <h1 id="fh5co-logo"><a href="../index.html">intelshare</a></h1>
+                        <h1 id="fh5co-logo"><a href="../index.html">InterShare</a></h1>
                         <!-- START #fh5co-menu-wrap -->
                         <nav id="fh5co-menu-wrap" role="navigation">
                             <ul class="sf-menu" id="fh5co-primary-menu">
@@ -106,97 +106,96 @@
                 </div>
             </header>
         </div>
-        <!-- end:fh5co-header -->
+        <!--表单提交-->
         <br>
-        <div id="financial_service" class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading" style="margin-bottom: 0px;">
-                    <i class="sl-icon-energy"></i>
-                    <h2>金融服务</h2>
-                    <p>关注核心价值构建，致力于以专业、严谨极致服务。</p><br>
-                </div>
-            </div>
-        </div>
-
-        <div class="f2n-section financial-bg">
-
-            <div class="f2n-band">
-                <div class="row container">
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                        <h3>专注能源行业供应链金融服务</h3>
-
-                        <p>
-                            <small>
-                                国内领先的专注能源行金融服务商，旗下金融服务聚焦能源行业。联合国内多家银行、券商、保险、信托、金融租赁公司、股权投资机构等各类金融机构，为业内中小企业融资提供一站式金融服务<br>
-                                团队服务于能源行业数十多年经验，熟悉全产业链及行业全球化趋势。从用户实际需求出发，率先采用从交易、资金、合同、物流等全方位把控风险的供应链金融创新模式<br>
-                                有效的解决了中小企业融资渠道单一、现金流短缺等核心需求。为中小企业提供应收账款融资、应收账款管理及催收、合同质押借款、流动资金借款等商业保理服务<br>
-                            </small>
-                        </p>
+        <div class="page-content box">
+            <form action="/s/enter/way/publish" method="post" id="mform">
+                <div class="from-box">
+                    <h2>服务商入驻申请</h2>
+                    <div class="input-box clearFix">
+                        <ul>
+                            <li class="clearFix">
+                                <div class="left">公司名称</div>
+                                <div class="right"><input name="company" type="text"></div>
+                            </li>
+                            <li class="clearFix">
+                                <div class="left">公司网站</div>
+                                <div class="right"><input name="company_web" type="text"></div>
+                            </li>
+                            <li class="clearFix">
+                                <div class="left">联系人姓名</div>
+                                <div class="right"><input name="contact_name" type="text"></div>
+                            </li>
+                            <li class="clearFix">
+                                <div class="left">联系电话</div>
+                                <div class="right"><input name="contact_way" type="text"></div>
+                            </li>
+                            <li class="clearFix">
+                                <div class="left">联系邮箱</div>
+                                <div class="right"><input name="contact_email" type="text"></div>
+                            </li>
+                            <li class="clearFix">
+                                <div class="left">服务描述</div>
+                                <div class="right"><textarea name="description" id="textarea"></textarea></div>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                        <h3>聚焦能源企业软性资产管理服务</h3>
-
-                        <p>
-                            <small>
-                                知识产权资本化<br>
-                                品牌资本化<br>
-                                创新技术资本化<br>
-                                全球创新技术转移服务
-                            </small>
-                        </p>
+                    <div class="row-c">
+                        <input type="submit" class="hidden">
+                        <div class="btn btn-primary" id="submit">提交申请</div>
                     </div>
                 </div>
-            </div>
-
+            </form>
         </div>
+        <br>
+        <br>
 
+
+        <!--底部导航-->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" style="margin-bottom: 20px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>智享网联</h3>
+                                <ul class="link">
+                                    <li><a href="#">产业升级</a></li>
+                                    <li><a href="#">产业基金</a></li>
+                                    <li><a href="#">全球合作站</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>合作企业</h3>
+                                <p>一些成果展示</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" style="margin-bottom: 20px;">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                                <a href="#"><i class="icon-linkedin-with-circle"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="mdl-button mdl-js-button mdl-button--fab" id="gototop">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </button><!--#gototop-->
+                    </div>
+                </div>
+
+                <br>
+                <small>&copy; 2017 intelshare | power by: Four2Nine. All Rights Reserved.</small>
+            </div>
+        </footer>
     </div>
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="margin-bottom: 20px;">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3>智享网联</h3>
-                            <ul class="link">
-                                <li><a href="#">产业升级</a></li>
-                                <li><a href="#">产业基金</a></li>
-                                <li><a href="#">全球合作站</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>合作企业</h3>
-                            <p>一些成果展示</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="margin-bottom: 20px;">
-                    <ul class="social-icons">
-                        <li>
-                            <a href="#"><i class="icon-twitter-with-circle"></i></a>
-                            <a href="#"><i class="icon-facebook-with-circle"></i></a>
-                            <a href="#"><i class="icon-instagram-with-circle"></i></a>
-                            <a href="#"><i class="icon-linkedin-with-circle"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <button class="mdl-button mdl-js-button mdl-button--fab" id="gototop">
-                        <i class="glyphicon glyphicon-chevron-up"></i>
-                    </button><!--#gototop-->
-                </div>
-            </div>
-
-            <br>
-            <small>&copy; 2017 intelshare | power by: Four2Nine. All Rights Reserved.</small>
-        </div>
-    </footer>
-</div>
-<!-- END fh5co-page -->
+    <!-- END fh5co-page -->
 
 </div>
 <!-- END fh5co-wrapper -->
