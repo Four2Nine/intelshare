@@ -33,6 +33,9 @@
 
     <link rel="stylesheet" href="../css/material.min.css">
 
+    <!-- Sweetalert Css -->
+    <link href="../css/sweetalert.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/page/upgrade.css">
 
@@ -52,7 +55,7 @@
                 <div class="container">
                     <div class="nav-header">
                         <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                        <h1 id="fh5co-logo"><a href="../index.html">InterShare</a></h1>
+                        <h1 id="fh5co-logo"><a href="../index.html">intelshare</a></h1>
                         <!-- START #fh5co-menu-wrap -->
                         <nav id="fh5co-menu-wrap" role="navigation">
                             <ul class="sf-menu" id="fh5co-primary-menu">
@@ -107,134 +110,61 @@
             </header>
         </div>
         <!--服务商入驻-->
-        <div class="page-content box">
-            <div id="wisdom_manage" class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                        <i class="sl-icon-layers"></i>
-                        <h2>智慧管理</h2>
-                    </div>
+
+        <div class="container">
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <i class="sl-icon-layers"></i>
+                    <h2>智慧管理</h2>
                 </div>
             </div>
-            <div class="seach clearFix">
-                <a href="#"><p class="itme blue">服务商入驻</p></a>
-                <a href="#"><p class="itme orange">发布需求</p></a>
-                <br>
-            </div>
-            <br>
-            <br>
-            <div class="container page-content box">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="media panel mdl-shadow--2dp">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="../images/upgrade/product.svg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="media-heading">
-                                    <a href="#">Title</a>
-                                </h5>
-                                <p>
-                                    <small>description.......</small>
-                                </p>
 
-                                <span class="label label-primary">type / label / tag</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="media panel mdl-shadow--2dp">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="../images/upgrade/product.svg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="media-heading">
-                                    <a href="#">Title</a>
-                                </h5>
-                                <p>
-                                    <small>description.......</small>
-                                </p>
-
-                                <span class="label label-primary">type / label / tag</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <button class="rec-btn btn-primary"
+                            data-toggle='modal'
+                            data-target='#serviceApplyModal'>服务商入驻
+                    </button>
+                    <button class="rec-btn rec-bg-orange"
+                            style="background: #ec8928; color: #fff; border: 2px solid #ec8928; margin-left: 10px;"
+                            data-toggle="modal"
+                            data-target="#serviceRequestModal">发布需求
+                    </button>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="media panel mdl-shadow--2dp">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="../images/upgrade/product.svg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="media-heading">
-                                    <a href="#">Title</a>
-                                </h5>
-                                <p>
-                                    <small>description.......</small>
-                                </p>
-
-                                <span class="label label-primary">type / label / tag</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="media panel mdl-shadow--2dp">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="../images/upgrade/product.svg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="media-heading">
-                                    <a href="#">Title</a>
-                                </h5>
-                                <p>
-                                    <small>description.......</small>
-                                </p>
-
-                                <span class="label label-primary">type / label / tag</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <nav class="text-center" aria-label="Page navigation">
-                    <ul class="pagination pagination-sm">
-                        <li onclick="prevPage()">
-                            <a aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>1</a>
-                        </li>
-                        <li>
-                            <a>2</a>
-                        </li>
-                        <li>
-                            <a>3</a>
-                        </li>
-                        <li onclick="nextPage()">
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul><!--/.pagination-->
-                </nav>
             </div>
 
             <br>
-            <br>
+
+            <div class="row" id="service-list">
+
+            </div>
+
+            <nav class="text-center" aria-label="Page navigation">
+                <ul class="pagination pagination-sm">
+                    <li onclick="prevPage()">
+                        <a aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a>2</a>
+                    </li>
+                    <li>
+                        <a>3</a>
+                    </li>
+                    <li onclick="nextPage()">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul><!--/.pagination-->
+            </nav>
 
         </div>
 
@@ -287,6 +217,187 @@
 </div>
 <!-- END fh5co-wrapper -->
 
+<div class="modal fade" id="serviceApplyModal" tabindex="-1" role="dialog" style="margin-top: 100px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="defaultModalLabel">服务商入驻申请</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-horizontal" id="service-apply-form">
+
+                    <div class="row">
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">公司名称</span>
+                            <div class="col-sm-9">
+                                <input
+                                        type="text"
+                                        name="company-name"
+                                        id="company-name"
+                                        class="form-control"
+                                        placeholder="公司名称"
+                                        required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">公司网站</span>
+                            <div class="col-sm-9">
+                                <input
+                                        type="text"
+                                        name="company-website"
+                                        id="company-website"
+                                        class="form-control"
+                                        placeholder="公司网站"
+                                        required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">联系人姓名</span>
+                            <div class="col-sm-9">
+                                <input type="text"
+                                       name="contact-name"
+                                       id="contact-name"
+                                       class="form-control"
+                                       placeholder="联系人姓名"
+                                       required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">联系电话</span>
+                            <div class="col-sm-9">
+                                <input type="text"
+                                       name="contact-phone-number"
+                                       id="contact-phone-number"
+                                       placeholder="联系电话"
+                                       class="form-control"
+                                       required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">联系邮箱</span>
+                            <div class="col-sm-9">
+                                <input type="email"
+                                       name="contact-email"
+                                       id="contact-email"
+                                       class="form-control"
+                                       placeholder="联系邮箱"
+                                       required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">服务描述</span>
+                            <div class="col-sm-9">
+                                <textarea rows="4"
+                                          class="form-control"
+                                          id="service-desc"
+                                          name="service-desc"
+                                          placeholder="服务描述"
+                                          required=""></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="rec-btn btn-primary" onclick="submitApply()">提交申请</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="serviceRequestModal" tabindex="-1" role="dialog" style="margin-top: 100px">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">发布需求</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-horizontal" id="service-request-form">
+                    <div class="row">
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">公司名称</span>
+                            <div class="col-sm-9">
+                                <input
+                                        type="text"
+                                        name="company-name"
+                                        class="form-control"
+                                        placeholder="公司名称"
+                                        required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">公司规模</span>
+                            <div class="col-sm-9">
+                                <select class="form-control" title="">
+                                    <option>请选择公司规模</option>
+                                    <option>500人以下</option>
+                                    <option>500-2000人</option>
+                                    <option>2000人以上</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">所属行业</span>
+                            <div class="col-sm-9">
+                                <input type="text"
+                                       name="industry"
+                                       class="form-control"
+                                       placeholder="所属行业"
+                                       required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">所在城市</span>
+                            <div class="col-sm-9">
+                                <input type="text"
+                                       name="city"
+                                       placeholder="所在城市"
+                                       class="form-control"
+                                       required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">服务类型</span>
+                            <div class="col-sm-9">
+                                <input type="email"
+                                       name="service-type"
+                                       class="form-control"
+                                       placeholder="服务类型"
+                                       required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">预算</span>
+                            <div class="col-sm-9">
+                                <textarea rows="4"
+                                          class="form-control"
+                                          name="budget"
+                                          placeholder="预算"
+                                          required=""></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jQuery -->
 <script src="../js/jquery.min.js"></script>
 <!-- jQuery Easing -->
@@ -305,8 +416,13 @@
 <!-- Counters -->
 <script src="../js/jquery.countTo.js"></script>
 <script src="../js/material.min.js"></script>
+
+<!-- SweetAlert Plugin Js -->
+<script src="../js/sweetalert.min.js"></script>
+
 <!-- Main JS (Do not remove) -->
 <script src="../js/main.js"></script>
+<script src="../js/pages/zhihui.js"></script>
 
 </body>
 </html>

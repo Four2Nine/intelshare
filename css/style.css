@@ -233,6 +233,20 @@ figure {
   opacity: 1;
 }
 
+.rec-btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Open Sans", Arial, serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rec-bg-orange {
+    background: #ec8928 !important;
+    color: #fff;
+}
+
+
 #fh5co-header {
   position: relative;
   margin-bottom: 0;

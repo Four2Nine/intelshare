@@ -74,63 +74,12 @@ upgrade.html
     height:900px;
 }
 
-#research_modal_more{
-    margin-top: 100px;
+#service-apply-form,
+#service-request-form {
+    padding: 5px 20px !important;
 }
 
-/*jkjun*/
-.seach {
-    padding: 20px 25px;
-    background: #fff;
-    width: 1100px;
-    margin: 35px auto 0;
-    border: 1px solid #e5e5e5;
+#service-apply-form input,
+#service-request-form input {
+    margin-top: 5px;
 }
-
-.seach a:first-child .itme {
-    margin-left: 0;
-}
-
-.seach .itme.blue {
-    background: #00adb5;
-}
-
-.seach .itme.orange {
-    background: #ec8928;
-}
-
-.seach .itme {
-    float: left;
-    line-height: 34px;
-    padding: 0 37px;
-    color: #fff;
-    margin-left: 15px;
-}
-
-.clearFix {
-    zoom: 1;
-}
-
-.page-content {
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-
-.box {
-    width: 1150px !important;
-}
-
-.box, .fluidcenter {
-    margin: 0 auto;
-}
-
-.box, .relative {
-    position: relative;
-}
-
-/*项目列表*/
-
-
-
-
-
