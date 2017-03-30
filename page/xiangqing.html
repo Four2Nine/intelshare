@@ -35,6 +35,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/page/zhihui.css">
+    <link rel="stylesheet" href="../css/page/upgrade.css">
 
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
@@ -150,7 +151,9 @@
                 </p>
             </div>
             <div class="btn_share">
-                <a href="#" class="btn btn-default"><p>立即咨询</p></a>
+                <a href="#" class="btn btn-default"
+                   data-toggle="modal"
+                   data-target="#serviceRequestModal"><p>立即咨询</p></a>
                 <a href="#" class="btn btn-primary"><p style="color: #ffffff">进入官网</p></a>
                 <!-- <a href="javascript:;"><p>加入对比</p></a> -->
             </div>
@@ -210,7 +213,7 @@
                             <hr class="marginhr">
                             <div>
                                 <h3>服务介绍</h3>
-                                <div class="introduce_fu"><img style="width:750px; height:2792px;"
+                                <div class="introduce_fu"><img class="img-responsive"
                                                                src="http://img1.iyiou.com/Picture/2017-03-28/58da239cbb8e8.jpg">
                                 </div>
                             </div>
@@ -337,7 +340,95 @@
         </footer>
     </div>
     <!-- END fh5co-page -->
+    <div class="modal fade" id="serviceRequestModal" tabindex="-1" role="dialog" style="margin-top: 100px">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <p class="modal-title" style="font-size: 2em; color: rgba(0, 0, 0, 0.7);">发布需求</p>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" id="service-request-form">
+                        <div class="row">
 
+                            <div class="form-group">
+                                <span class="col-sm-3 control-label">公司名称</span>
+                                <div class="col-sm-9">
+                                    <input
+                                            type="text"
+                                            name="company-name"
+                                            class="form-control"
+                                            placeholder="公司名称"
+                                            required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-sm-3 control-label">公司规模</span>
+                                <div class="col-sm-9">
+                                    <select class="form-control" title="">
+                                        <option>请选择公司规模</option>
+                                        <option>500人以下</option>
+                                        <option>500-2000人</option>
+                                        <option>2000人以上</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-sm-3 control-label">所属行业</span>
+                                <div class="col-sm-9">
+                                    <input type="text"
+                                           name="industry"
+                                           class="form-control"
+                                           placeholder="所属行业"
+                                           required="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-sm-3 control-label">所在城市</span>
+                                <div class="col-sm-9">
+                                    <input type="text"
+                                           name="city"
+                                           placeholder="所在城市"
+                                           class="form-control"
+                                           required="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-sm-3 control-label">服务类型</span>
+                                <div class="col-sm-9">
+                                    <input type="email"
+                                           name="service-type"
+                                           class="form-control"
+                                           placeholder="服务类型"
+                                           required="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-sm-3 control-label">预算</span>
+                                <div class="col-sm-9">
+                                <textarea rows="4"
+                                          class="form-control"
+                                          name="budget"
+                                          placeholder="预算"
+                                          required=""></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">提交需求</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- END fh5co-wrapper -->
 
