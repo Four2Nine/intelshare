@@ -628,7 +628,7 @@ figure {
 }
 
 #fh5co-hero {
-  min-height: 587px;
+  /*min-height: 587px;*/
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-hero .btn {
