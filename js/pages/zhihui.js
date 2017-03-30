@@ -23,13 +23,13 @@ function getAllPassedService() {
                     html += "<div class='col-lg-6 col-md-6 col-sm-6'>" +
                         "<div class='media panel mdl-shadow--2dp'>" +
                         "<div class='media-left'>" +
-                        "<a href='#'>" +
+                        "<a href='xiangqing.html'>" +
                         "<img class='media-object' src='../images/upgrade/product.svg'>" +
                         "</a>" +
                         "</div>" +
                         "<div class='media-body'>" +
                         "<h5 class='media-heading'>" +
-                        "<a href='#'>" + result.serviceInfo[item + ""]['company_name'] + "</a>" +
+                        "<a href='xiangqing.html'>" + result.serviceInfo[item + ""]['company_name'] + "</a>" +
                         "</h5>" +
                         "<p style='text-overflow:ellipsis;'>" +
                         "<small>" + result.serviceInfo[item + ""]['service_description'].substring(0, 30) + "...</small>" +
