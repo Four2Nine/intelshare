@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="007eac26-3195-4b5f-aebf-41b1ce670b19" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/connection.db.php" afterPath="$PROJECT_DIR$/controller/connection.db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/xiangqing.html" afterPath="$PROJECT_DIR$/page/xiangqing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/zhihui.html" afterPath="$PROJECT_DIR$/page/zhihui.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/jinrong.html" afterPath="$PROJECT_DIR$/page/jinrong.html" />
     </list>
     <list id="317d29c9-0fd3-467e-a6d9-3e7f37d13fd1" name="not commit" comment="" />
     <ignored path="intelshare.iws" />
@@ -44,7 +43,7 @@
       <file leaf-file-name="zhihui.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/zhihui.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="6422">
               <caret line="401" column="18" selection-start-line="399" selection-start-column="12" selection-end-line="401" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -66,20 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zixun.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/zixun.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xiangqing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/xiangqing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="5073">
               <caret line="296" column="0" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
               <folding>
                 <element signature="e#4930#6324#0" expanded="false" />
@@ -105,22 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4237">
-              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#errorCode2errorInfo#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xiangqing.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/pages/xiangqing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="380">
               <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc;n#showhidediv#0" expanded="false" />
@@ -132,7 +109,7 @@
       <file leaf-file-name="zhihui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/pages/zhihui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="361">
               <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
@@ -155,11 +132,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection.db.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="connection.db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/connection.db.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1376">
+              <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jinrong.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/jinrong.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="190" column="22" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -196,7 +193,6 @@
         <option value="$PROJECT_DIR$/js/zhihui.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/page/upgrade.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/page/xuqiu.html" />
         <option value="$PROJECT_DIR$/js/pages/xiangqing.js" />
         <option value="$PROJECT_DIR$/css/page/zhihui.css" />
@@ -206,11 +202,12 @@
         <option value="$PROJECT_DIR$/page/fund.html" />
         <option value="$PROJECT_DIR$/page/global.html" />
         <option value="$PROJECT_DIR$/page/contact.html" />
-        <option value="$PROJECT_DIR$/page/jinrong.html" />
         <option value="$PROJECT_DIR$/page/upgrade.html" />
         <option value="$PROJECT_DIR$/controller/connection.db.php" />
         <option value="$PROJECT_DIR$/page/zhihui.html" />
         <option value="$PROJECT_DIR$/page/xiangqing.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/page/jinrong.html" />
       </list>
     </option>
   </component>
@@ -253,7 +250,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,6 +312,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,7 +415,8 @@
       <workItem from="1490750217224" duration="719000" />
       <workItem from="1490794572124" duration="2151000" />
       <workItem from="1490844251691" duration="11192000" />
-      <workItem from="1490872485245" duration="3501000" />
+      <workItem from="1490872485245" duration="3621000" />
+      <workItem from="1490928014193" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="jjj">
       <created>1490342063784</created>
@@ -490,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490867743066</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="需求发布修改">
+      <created>1490876875803</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1490876875803</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50464000" />
+    <option name="totallyTimeSpent" value="50761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,7 +514,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15830946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16045845" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1239255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -569,7 +574,8 @@
     <MESSAGE value="部分链接修改" />
     <MESSAGE value="部分链接修改&#10;" />
     <MESSAGE value="智慧管理详情页添加完成&#10;超级链接做通&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="智慧管理详情页添加完成&#10;超级链接做通&#10;" />
+    <MESSAGE value="需求发布修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="需求发布修改" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -755,14 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3040">
-          <caret line="160" column="14" selection-start-line="160" selection-start-column="8" selection-end-line="201" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -784,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1444">
           <caret line="76" column="72" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,15 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1539">
           <caret line="81" column="72" selection-start-line="81" selection-start-column="72" selection-end-line="81" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/jinrong.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/zixun.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="418">
           <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
           <folding />
         </state>
@@ -891,7 +877,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pages/zhihui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="361">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
@@ -902,7 +888,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pages/xiangqing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="380">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc;n#showhidediv#0" expanded="false" />
@@ -912,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/zhihui.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="6422">
           <caret line="401" column="18" selection-start-line="399" selection-start-column="12" selection-end-line="401" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -925,7 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/xiangqing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="5073">
           <caret line="296" column="0" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
           <folding>
             <element signature="e#4930#6324#0" expanded="false" />
@@ -969,6 +955,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/connection.db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/Constant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -977,10 +971,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/connection.db.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="1376">
+          <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/jinrong.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="190" column="22" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
           <folding />
         </state>
       </provider>
