@@ -53,6 +53,50 @@ function submitApply() {
 
     var serializedData = $("#service-apply-form").serialize();
 
+    var name = $("#company-name");
+    var url = $("#company-website");
+    var contact = $("#contact-name");
+    var phone = $("#contact-phone-number");
+    var email = $("#contact-email");
+    var description = $("#service-desc");
+
+    if (name.val() == "") {
+        $("#company-name-error").html("不能为空");
+        return false;
+    } else {
+        $("#company-name-error").html("");
+    }
+    if (url.val() == "") {
+        $("#company-website-error").html("不能为空");
+        return false;
+    } else {
+        $("#company-website-error").html("");
+    }
+    if (contact.val() == "") {
+        $("#contact-name-error").html("不能为空");
+        return false;
+    } else {
+        $("#contact-name-error").html("");
+    }
+    if (phone.val() == "") {
+        $("#contact-phone-number-error").html("不能为空");
+        return false;
+    } else {
+        $("#contact-phone-number-error").html("请如实填写，否则我们将无法联系到您");
+    }
+    if (email.val() == "") {
+        $("#contact-email-error").html("不能为空");
+        return false;
+    } else {
+        $("#contact-email-error").html("请如实填写，否则我们将无法联系到您");
+    }
+    if (description.val() == "") {
+        $("#service-desc-error").html("不能为空");
+        return false;
+    } else {
+        $("#service-desc-error").html("");
+    }
+
     $.ajax({
         url: "/intelshare/controller/service.con.php",
         type: "get",
@@ -70,26 +114,73 @@ function submitApply() {
     })
 }
 
+function submitRequest() {
+    var serializedData = $("#service-request-form").serialize();
+
+    var name = $("#company-name-req");
+    var scale = $("#scale");
+    var industry = $("#industry");
+    var city = $("#city");
+    var serviceType = $("#service-type");
+    var budget = $("#budget");
+
+    if (name.val() == "") {
+        $("#company-name-req-error").html("不能为空");
+        return false;
+    } else {
+        $("#company-name-req-error").html("");
+    }
+
+    if (industry.val() == "") {
+        $("#industry-error").html("不能为空");
+        return false;
+    } else {
+        $("#industry-error").html("");
+    }
+
+    if (city.val() == "") {
+        $("#city-error").html("不能为空");
+        return false;
+    } else {
+        $("#city-error").html("");
+    }
+
+    if (serviceType.val() == "") {
+        $("#service-type-error").html("不能为空");
+        return false;
+    } else {
+        $("#service-type-error").html("");
+    }
+
+    if (budget.val() == "") {
+        $("#budget-error").html("不能为空");
+        return false;
+    } else if (budget.val() < 0) {
+        $("#budget-error").html("预算不能为负数")
+        return false;
+    } else {
+        $("#budget-error").html("");
+    }
+
+    $.ajax({
+        url: "/intelshare/controller/service.con.php",
+        type: "get",
+        data: serializedData + "&funName=addServiceRequest",
+        success: function (data) {
+            var result = JSON.parse(data);
+
+            $("#serviceRequestModal").modal('hide');
+            if (result.status != CORRECT) {
+                swal(errorCode2errorInfo(result.status));
+            } else {
+                swal("已提交需求")
+            }
+        }
+    })
+}
+
 /*
 
- <div class="col-lg-6 col-md-6 col-sm-6">
- <div class="media panel mdl-shadow--2dp">
- <div class="media-left">
- <a href="#">
- <img class="media-object" src="../images/upgrade/product.svg" alt="...">
- </a>
- </div>
- <div class="media-body">
- <h5 class="media-heading">
- <a href="#">Title</a>
- </h5>
- <p>
- <small>description.......</small>
- </p>
 
- <span class="label label-primary">type / label / tag</span>
- </div>
- </div>
- </div>
 
  */

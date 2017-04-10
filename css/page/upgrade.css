@@ -83,3 +83,8 @@ upgrade.html
 #service-request-form input {
     margin-top: 5px;
 }
+
+.error {
+    color: red !important;
+    font-size: xx-small;
+}

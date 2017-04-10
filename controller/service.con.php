@@ -21,6 +21,9 @@ switch ($funName) {
     case 'addServiceApply':
         addServiceApply();
         break;
+    case 'addServiceRequest':
+        addServiceRequest();
+        break;
     default:
         echo json_encode(array());
 }
@@ -107,6 +110,54 @@ function addServiceApply()
         $phone,
         $email,
         $service_desc
+    );
+    $stmt->execute();
+
+    $result = array();
+
+    $affected_rows = $stmt->affected_rows;
+
+    if ($affected_rows == 1) {
+        $result['status'] = Constant::$_CORRECT;
+    } else {
+        $result['status'] = Constant::$_DB_INSERT_ERROR;
+    }
+
+    //关闭数据库连接
+    $stmt->close();
+    $con->close();
+    echo json_encode($result);
+}
+
+function addServiceRequest()
+{
+    $company_name = $_GET['company-name'];
+    $scale = $_GET['scale'];
+    $industry = $_GET['industry'];
+    $city = $_GET['city'];
+    $serviceType = $_GET['service-type'];
+    $budget = $_GET["budget"];
+
+    $con = connect();
+
+    $sql = "INSERT INTO `tb_request` (
+                    `company_name`,
+                    `scale`,
+                    `industry`,
+                    `city`,
+                    `service_type`,
+                    `budget`
+              ) VALUE (?, ?, ?, ?, ?, ?)";
+
+    $stmt = $con->prepare($sql);
+    $stmt->bind_param(
+        "sisssi",
+        $company_name,
+        $scale,
+        $industry,
+        $city,
+        $serviceType,
+        $budget
     );
     $stmt->execute();
 
