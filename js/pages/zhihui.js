@@ -2,15 +2,23 @@
  * Created by liuyang on 2017/3/28.
  */
 
-$(function () {
-    //get all passed service
+var numPerPage = 6;
+var pageNum = 1;
+var cp = getQueryString("p");
+
+if (cp == null || cp.toString().length < 1) {
+    cp = 1;
+}
+
+$(document).ready(function () {
     getAllPassedService();
 });
 
 function getAllPassedService() {
     $.ajax({
         url: "/intelshare/controller/service.con.php",
-        data: "funName=getPassedService",
+        data: {funName: "getPassedService", cp: cp},
+        type: "get",
         success: function (data) {
             var result = JSON.parse(data);
             var num = result.serviceNum;
@@ -20,28 +28,65 @@ function getAllPassedService() {
             } else {
                 var html = "";
                 for (var item in result.serviceInfo) {
+                    var src = "../images/upgrade/product.svg";
+                    if (result.serviceInfo[item + ""]['company_logo'] != null) {
+                        src = "../../Admin/images/service/" + result.serviceInfo[item + ""]['company_logo'];
+                    }
+
                     html += "<div class='col-lg-6 col-md-6 col-sm-6'>" +
                         "<div class='media panel mdl-shadow--2dp'>" +
                         "<div class='media-left'>" +
                         "<a href='xiangqing.html'>" +
-                        "<img class='media-object' src='../images/upgrade/product.svg'>" +
+                        "<img class='media-object' src='" + src + "' width='120' height='120'>" +
                         "</a>" +
                         "</div>" +
                         "<div class='media-body'>" +
                         "<h5 class='media-heading'>" +
                         "<a href='xiangqing.html'>" + result.serviceInfo[item + ""]['company_name'] + "</a>" +
                         "</h5>" +
-                        "<p style='text-overflow:ellipsis;'>" +
-                        "<small>" + result.serviceInfo[item + ""]['service_description'].substring(0, 30) + "...</small>" +
-                        "</p>" +
+                        "<span style='text-overflow:ellipsis;'>" +
+                        "<small>" + result.serviceInfo[item + ""]['service_description'].substring(0, 10) + "...</small>" +
+                        "</span>";
 
-                        "<span class='label label-info'>type / label / tag</span>" +
+                    var label = "无";
+                    var type = result.serviceInfo[item + ""]["type"];
+                    if (type != null && type != "") {
+                        label = type;
+                    }
+
+                    html += "<br><span class='label label-info'>" + label + "</span>" +
                         "</div>" +
                         "</div>" +
                         "</div>";
                 }
 
                 $("#service-list").html(html).fadeIn(700);
+            }
+
+            // set pagenation
+            if (num > 0) {
+                pageNum = Math.ceil(num / numPerPage);
+            }
+            if (cp == 1) {
+                $("ul.pagination li:first").attr("class", "disabled");
+            }
+
+            if (cp == pageNum) {
+                $("ul.pagination li:last").attr("class", "disabled");
+            }
+
+            for (var i = 1; i <= pageNum; i++) {
+
+                if (i == cp) {
+                    $("ul.pagination li:eq(-2)").after(
+                        "<li class='active' onclick='goPage(" + i + ")'><a>" + i + "</a></li>"
+                    );
+                } else {
+                    $("ul.pagination li:eq(-2)").after(
+                        "<li onclick='goPage(" + i + ")'><a>" + i + "</a></li>"
+                    );
+                }
+
             }
         }
     })
@@ -179,8 +224,19 @@ function submitRequest() {
     })
 }
 
-/*
+function goPage(page) {
+    if (page != cp)
+        location.href = "zhihui.html?p=" + page;
+}
 
+function prevPage() {
+    var page = Math.max(cp - 1, 1);
+    if (page != cp)
+        location.href = "zhihui.html?p=" + page;
+}
 
-
- */
+function nextPage() {
+    var page = Math.min(pageNum, cp + 1);
+    if (page != cp)
+        location.href = "zhihui.html?p=" + page;
+}

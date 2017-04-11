@@ -16,7 +16,7 @@ $funName = filter_input(INPUT_GET, 'funName');
 
 switch ($funName) {
     case 'getPassedService':
-        getPassedService();
+        getPassedService(((int)$_GET['cp'] - 1) * 6, 6);
         break;
     case 'addServiceApply':
         addServiceApply();
@@ -36,24 +36,35 @@ function connect()
     return $con;
 }
 
-function getPassedService()
+function getPassedService($s, $n)
 {
     $con = connect();
 
     $result = array();
-    $sql = "SELECT `id`, `company_name`, `contact_name`, `contact_phone_number`, `contact_email`, 
-`apply_time`, `service_description` FROM `tb_service` WHERE `is_pass`=1 ORDER BY `apply_time` DESC";
+    $sql = "SELECT 
+                  `id`, 
+                  `company_logo`, 
+                  `company_name`, 
+                  `service_type`,
+                  `industry`,
+                  `apply_time`, 
+                  `service_description` 
+            FROM `tb_service` 
+            WHERE `is_pass`=1 
+            ORDER BY `apply_time` DESC 
+            LIMIT ?, ?";
 
     $stmt = $con->prepare($sql);
+    $stmt->bind_param("ii", $s, $n);
     $stmt->execute();
 
     $stmt->store_result();
     $stmt->bind_result(
         $id,
+        $company_logo,
         $company_name,
-        $contact_name,
-        $phone_number,
-        $email,
+        $type,
+        $industry,
         $apply_time,
         $service_desc
     );
@@ -63,16 +74,21 @@ function getPassedService()
     while ($stmt->fetch()) {
         $item = array();
         $item['id'] = $id;
+        $item['company_logo'] = $company_logo;
         $item['company_name'] = $company_name;
-        $item['contact_name'] = $contact_name;
-        $item['phone_number'] = $phone_number;
-        $item['email'] = $email;
+        $item['type'] = $type;
+        $item['industry'] = $industry;
         $item['apply_time'] = $apply_time;
         $item['service_description'] = $service_desc;
 
         $result['serviceInfo'][$id] = $item;
     }
 
+    //获取项目数量
+    $sqlCount = "SELECT * FROM `tb_service` WHERE `is_pass` = 1";
+    $stmt = $con->prepare($sqlCount);
+    $stmt->execute();
+    $stmt->store_result();
     $result['serviceNum'] = $stmt->num_rows;
 
     //关闭数据库连接
