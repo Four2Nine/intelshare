@@ -40,8 +40,8 @@ function getNews() {
                         "<div class='image' style='background-image: url(" + src + ");'></div>" +
                         "<div class='desc desc2'>" +
                         "<h3>" + result.news[item + ""]['title'] + "</h3>" +
-                        "<p>" + result.news[item + ""]['content'] + "</p>" +
-                        "<p><a class='btn btn-primary btn-luxe-primary'>Learn More</a></p>" +
+                        "<p>" + result.news[item + ""]['content'].substring(0, 50) + "</p>" +
+                        "<p><a href='new.html?i=" + item + "' class='btn btn-primary btn-luxe-primary'>Learn More</a></p>" +
                         "</div></div>";
                     i++;
                     if (i == 2) {

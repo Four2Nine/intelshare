@@ -7,6 +7,7 @@ $.ajax({
     success: function (data) {
         var result = JSON.parse(data);
         var html = "";
+        console.log(result);
 
         for (var item in result.staff) {
             var src = "../images/upgrade/product.svg";

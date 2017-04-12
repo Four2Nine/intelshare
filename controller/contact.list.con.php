@@ -1,6 +1,6 @@
 <?php
 /**
- * 获取企业服务列表
+ * 获取全球合伙人列表
  *
  * Created by PhpStorm.
  * User: liuyang
