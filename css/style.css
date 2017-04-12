@@ -2282,3 +2282,7 @@ figure {
     background-color: rgb(91, 192, 222) !important;
     border-color: rgb(91, 192, 222) !important;
 }
+
+#company_name {
+    margin-top: 10px !important;
+}

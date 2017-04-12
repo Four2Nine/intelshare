@@ -108,53 +108,25 @@
                 </div>
             </header>
         </div>
-        <!--智慧管理详情页
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div style="width: 80%">
-                            <div class="media panel mdl-shadow--2dp">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/upgrade/product.svg" alt="...">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">Title</a>
-                                    </h5>
-                                    <p>
-                                        <small>description.......</small>
-                                    </p>
 
-                                    <span class="label label-primary">type / label / tag</span>
-                                </div>
-                                <div class="btn_share">
-                                    <a href="#"><p class="on">立即咨询</p></a>
-                                    <a href="#"><p>进入官网</p></a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>-->
         <div class="info_box clearFix">
             <div class="img_background">
-                <img src="../images/upgrade/product.svg" alt="订货宝">
+                <img src="../images/upgrade/product.svg" alt="订货宝" id="company_logo" width="171" height="180">
             </div>
             <div class="text_box">
-                <h2>订货宝</h2>
-                <p>为企业搭建专属渠道订货平台</p>
-                <p class="tages"><span>订货平台</span></p>
+                <h2 id="company_name"></h2>
+                <p id="company_desc">为企业搭建专属渠道订货平台</p>
+                <p class="tages"><span id="service_type"></span></p>
                 <p>
-                    浏览：<span>147</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对比：<span>3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咨询：<span>0</span>
+                    浏览：<span id="view_count">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咨询：<span id="request_count">0</span>
                 </p>
             </div>
             <div class="btn_share">
                 <a href="#" class="btn btn-default"
                    data-toggle="modal"
                    data-target="#serviceRequestModal"><p>立即咨询</p></a>
-                <a href="#" class="btn btn-primary"><p style="color: #ffffff">进入官网</p></a>
+                <a href="#" target="_blank" class="btn btn-primary" id="company_website"><p style="color: #ffffff">
+                    进入官网</p></a>
                 <!-- <a href="javascript:;"><p>加入对比</p></a> -->
             </div>
         </div>
@@ -164,22 +136,21 @@
                 <div class="box_box">
                     <div class="service_lables">
                         <span class="active" name="spanone" onclick="showhidediv('one');">企业&服务</span>
-                        <span name="spantwo" class="" onclick="showhidediv('two');">案例&评价</span>
+                        <!--<span name="spantwo" class="" onclick="showhidediv('two');">案例&评价</span>-->
                     </div>
                     <div>
                         <div class="content_text" style="display: block;" id="lable-one">
                             <div>
                                 <div class="text-align">
-                                    <img src="http://img1.iyiou.com/Picture/2017-03-28/58da21721e6e4.png" alt="订货宝">
+                                    <img src="" width="500" height="300" id="banner_image">
                                 </div>
-                                <p>
-                                    订货宝为用户打造电脑、手机APP、微信等全终端渠道分销系统，让您的客户用微信就能订货。订货宝支持用友、金蝶、管家婆、速达等主流ERP无缝对接，让您的业务由内而外高效畅通！品牌定制服务为企业打造专属全渠道订货平台。独立APP！独立微信平台！独立订货网站！一切标识都是您的。订货宝支持多供应商联营。与合作伙伴一起抱团发展，为客户提供全品类商品！一同开拓客户，整合物流配送！</p>
+                                <p id="banner_text"></p>
                             </div>
                             <hr class="marginhr">
                             <div>
                                 <h3>管理团队</h3>
                                 <div class="clearFix">
-                                    <div class="row">
+                                    <div class="row" style="background-color:pink;">
                                         <div class="col-md-6 nopadding marginbottom20 peopletables">
                                             <div class="col-md-3 one nopadding text-align">
                                                 <img class="margin-none"
@@ -213,109 +184,85 @@
                             <hr class="marginhr">
                             <div>
                                 <h3>服务介绍</h3>
-                                <div class="introduce_fu"><img class="img-responsive"
-                                                               src="http://img1.iyiou.com/Picture/2017-03-28/58da239cbb8e8.jpg">
+                                <div class="introduce_fu">
+                                    <img class="img-responsive" src="" id="detail_image">
                                 </div>
                             </div>
                             <hr class="marginhr">
                             <div>
-                                <h3>资费说明</h3>
-                                <p>
-                                <p>订货宝根据用户所需版本不同，按年收取服务费。标准版：4800元/年；专业版：6800元/年；联营版：68000元/年。</p></p>
-                            </div>
-                            <hr class="marginhr">
-                            <div>
-                                <h3>视频介绍</h3>
-                                <div class="text-align">
-                                    <!--<iframe id="iframeon" src="https://v.qq.com/iframe/player.html?vid=z0316l4hksl&tiny=0&auto=0" data-src="https://v.qq.com/iframe/player.html?vid=z0316l4hksl&tiny=0&auto=0" frameborder="0" allowfullscreen="true"></iframe>-->
-                                </div>
+                                <h3>说明</h3>
+                                <p id="additional"></p>
                             </div>
                         </div>
-                        <div class="content_text" style="display: none;" id="lable-two">
-                            <div class="paddingtop20">
-                                <h3>成功案例</h3>
-                                <div class="clearFix">
-                                    <div class="row yes">
-                                        <a href="https://www.dhb168.com/f/content/ID/2745.html" target="_blank"
-                                           title="两面针">
-                                            <div class="col-md-3 two">
-                                                <img src="http://img3.iyiou.com/Picture/2017-03-28/58da2556da9e6.png"
-                                                     alt="两面针">
-                                            </div>
-                                        </a><a href=" https://www.dhb168.com/f/content/ID/2755.html" target="_blank"
-                                               title="雅鼎卫浴">
-                                        <div class="col-md-3 two">
-                                            <img src="http://img2.iyiou.com/Picture/2017-03-28/58da257c5a2c8.png"
-                                                 alt="雅鼎卫浴">
-                                        </div>
-                                    </a><a href="https://www.dhb168.com/f/content/ID/2754.html" target="_blank"
-                                           title="大牧场食品">
-                                        <div class="col-md-3 two">
-                                            <img src="http://img1.iyiou.com/Picture/2017-03-28/58da25a1568d8.png"
-                                                 alt="大牧场食品">
-                                        </div>
-                                    </a><a href=" https://www.dhb168.com/f/content/ID/2753.html" target="_blank"
-                                           title="双枪竹木">
-                                        <div class="col-md-3 two">
-                                            <img src="http://img1.iyiou.com/Picture/2017-03-28/58da25bf20386.png"
-                                                 alt="双枪竹木">
-                                        </div>
-                                    </a><a href="https://www.dhb168.com/f/content/ID/2749.html" target="_blank"
-                                           title="桃花季  ">
-                                        <div class="col-md-3 two">
-                                            <img src="http://img2.iyiou.com/Picture/2017-03-28/58da25d9dd0b4.png"
-                                                 alt="桃花季  ">
-                                        </div>
-                                    </a></div>
-                                </div>
-                            </div>
-                            <hr class="marginhr">
-                            <div>
-                                <h3>客户评价</h3>
+                        <!--<div class="content_text" style="display: none;" id="lable-two">-->
+                        <!--<div class="paddingtop20">-->
+                        <!--<h3>成功案例</h3>-->
+                        <!--<div class="clearFix">-->
+                        <!--<div class="row yes">-->
+                        <!--<a href="https://www.dhb168.com/f/content/ID/2745.html" target="_blank"-->
+                        <!--title="两面针">-->
+                        <!--<div class="col-md-3 two">-->
+                        <!--<img src="http://img3.iyiou.com/Picture/2017-03-28/58da2556da9e6.png"-->
+                        <!--alt="两面针">-->
+                        <!--</div>-->
+                        <!--</a><a href=" https://www.dhb168.com/f/content/ID/2755.html" target="_blank"-->
+                        <!--title="雅鼎卫浴">-->
+                        <!--<div class="col-md-3 two">-->
+                        <!--<img src="http://img2.iyiou.com/Picture/2017-03-28/58da257c5a2c8.png"-->
+                        <!--alt="雅鼎卫浴">-->
+                        <!--</div>-->
+                        <!--</a><a href="https://www.dhb168.com/f/content/ID/2754.html" target="_blank"-->
+                        <!--title="大牧场食品">-->
+                        <!--<div class="col-md-3 two">-->
+                        <!--<img src="http://img1.iyiou.com/Picture/2017-03-28/58da25a1568d8.png"-->
+                        <!--alt="大牧场食品">-->
+                        <!--</div>-->
+                        <!--</a><a href=" https://www.dhb168.com/f/content/ID/2753.html" target="_blank"-->
+                        <!--title="双枪竹木">-->
+                        <!--<div class="col-md-3 two">-->
+                        <!--<img src="http://img1.iyiou.com/Picture/2017-03-28/58da25bf20386.png"-->
+                        <!--alt="双枪竹木">-->
+                        <!--</div>-->
+                        <!--</a><a href="https://www.dhb168.com/f/content/ID/2749.html" target="_blank"-->
+                        <!--title="桃花季  ">-->
+                        <!--<div class="col-md-3 two">-->
+                        <!--<img src="http://img2.iyiou.com/Picture/2017-03-28/58da25d9dd0b4.png"-->
+                        <!--alt="桃花季  ">-->
+                        <!--</div>-->
+                        <!--</a></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<hr class="marginhr">-->
+                        <!--<div>-->
+                        <!--<h3>客户评价</h3>-->
 
-                            </div>
-                            <!-- <p class="btn-lat" data-num="4" class="lookMore"><span class="change">展开全部</span><span>4</span>条</p> -->
-                            <hr class="marginhr">
-                            <div>
-                                <h3>企业荣誉</h3>
-                            </div>
-                        </div>
+                        <!--</div>-->
+                        <!--&lt;!&ndash; <p class="btn-lat" data-num="4" class="lookMore"><span class="change">展开全部</span><span>4</span>条</p> &ndash;&gt;-->
+                        <!--<hr class="marginhr">-->
+                        <!--<div>-->
+                        <!--<h3>企业荣誉</h3>-->
+                        <!--</div>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
             <div class="fl_right">
                 <div class="box_box">
                     <h2 class="margin-none"><span>智享签</span></h2>
-                    <p class="margin-none">暂无标签</p>                    <!-- <div class="lookmore">查看更多</div> -->
+                    <p class="margin-none" id="city"></p>                    <!-- <div class="lookmore">查看更多</div> -->
+                    <p class="margin-none" id="industry"></p>
+                    <!-- <div class="lookmore">查看更多</div> -->
+                    <p class="margin-none" id="price"></p>                    <!-- <div class="lookmore">查看更多</div> -->
                 </div>
-                <div class="box_box margin-top28">
-                    <h2 class="margin-none"><span>企业文章</span></h2>
-                    <p class="margin-none">暂无文章</p>                    <!-- <div class="lookmore">查看更多</div> -->
-                </div>
+                <!--<div class="box_box margin-top28">-->
+                <!--<h2 class="margin-none"><span>企业文章</span></h2>-->
+                <!--<p class="margin-none">暂无文章</p>                    &lt;!&ndash; <div class="lookmore">查看更多</div> &ndash;&gt;-->
+                <!--</div>-->
             </div>
         </div>
 
         <!--底部导航-->
         <footer id="footer">
-            <!--<div class="container">-->
-            <!--<div class="row">-->
-
-
-            <!--<br>-->
-            <!--<div class="col-md-12" style="margin-bottom: 20px;">-->
-            <!--<img src="../images/footer1.jpg" alt="扫描关注微信" class="img-rounded">-->
-            <!--<small>&copy; 2017 intelshare | power by: Four2Nine. All Rights Reserved.</small>-->
-            <!--<ul class="social-icons" style="text-align: center">-->
-            <!--<li>-->
-            <!--<a href="#"><i class="icon-twitter-with-circle"></i></a>-->
-            <!--<a href="#"><i class="icon-facebook-with-circle"></i></a>-->
-            <!--<a href="#"><i class="icon-instagram-with-circle"></i></a>-->
-            <!--<a href="#"><i class="icon-linkedin-with-circle"></i></a>-->
-            <!--</li>-->
-            <!--</ul>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
             <div class="container-fluid">
                 <div class="row-fluid" style="text-align: center">
                     <div class="span12">
@@ -457,6 +404,7 @@
 <script src="../js/material.min.js"></script>
 <!-- Main JS (Do not remove) -->
 <script src="../js/main.js"></script>
+<script src="../js/xiangqing.js"></script>
 
 </body>
 </html>

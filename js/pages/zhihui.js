@@ -29,20 +29,20 @@ function getAllPassedService() {
                 var html = "";
                 for (var item in result.serviceInfo) {
                     var src = "../images/upgrade/product.svg";
-                    if (result.serviceInfo[item + ""]['company_logo'] != null) {
+                    if (result.serviceInfo[item + ""]["company_logo"] != null) {
                         src = "../../Admin/images/service/" + result.serviceInfo[item + ""]['company_logo'];
                     }
 
                     html += "<div class='col-lg-6 col-md-6 col-sm-6'>" +
                         "<div class='media panel mdl-shadow--2dp'>" +
                         "<div class='media-left'>" +
-                        "<a href='xiangqing.html'>" +
-                        "<img class='media-object' src='" + src + "' width='120' height='120'>" +
+                        "<a href='xiangqing.html?i=" + result.serviceInfo[item + ""]['id'] + "'>" +
+                        "<img class='media-object' src='" + src + "' width='150' height='150'>" +
                         "</a>" +
                         "</div>" +
                         "<div class='media-body'>" +
                         "<h5 class='media-heading'>" +
-                        "<a href='xiangqing.html'>" + result.serviceInfo[item + ""]['company_name'] + "</a>" +
+                        "<a href='xiangqing.html?i=" + result.serviceInfo[item + ""]['id'] + "'>" + result.serviceInfo[item + ""]['company_name'] + "</a>" +
                         "</h5>" +
                         "<span style='text-overflow:ellipsis;'>" +
                         "<small>" + result.serviceInfo[item + ""]['service_description'].substring(0, 10) + "...</small>" +

@@ -24,6 +24,9 @@ switch ($funName) {
     case 'addServiceRequest':
         addServiceRequest();
         break;
+    case 'getServiceDetail':
+        getServiceDetail((int)$_GET['i']);
+        break;
     default:
         echo json_encode(array());
 }
@@ -32,6 +35,13 @@ switch ($funName) {
 function connect()
 {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PWD, DB_NAME);
+    $con->query("SET NAMES UTF8;");
+    return $con;
+}
+
+function PDOConnect()
+{
+    $con = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PWD);
     $con->query("SET NAMES UTF8;");
     return $con;
 }
@@ -191,4 +201,29 @@ function addServiceRequest()
     $stmt->close();
     $con->close();
     echo json_encode($result);
+}
+
+function getServiceDetail($i)
+{
+    $con = PDOConnect();
+
+    $sql = "UPDATE `tb_service` SET `view_count` = `view_count` + 1 WHERE `id` = ?";
+    $stmt = $con->prepare($sql);
+
+    $stmt->bindParam(1, $i, PDO::PARAM_INT);
+    $stmt->execute();
+
+    //----------------------
+
+    $sql = "SELECT * FROM `tb_service` WHERE `id` = ?";
+    $stmt = $con->prepare($sql);
+
+    $stmt->bindParam(1, $i, PDO::PARAM_INT);
+    $stmt->execute();
+
+    $result = array();
+    $result['detail'] = $stmt->fetchObject();
+
+    echo json_encode($result);
+    exit;
 }
