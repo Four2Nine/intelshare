@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 function getAllPassedService() {
     $.ajax({
-        url: "/intelshare/controller/service.con.php",
+        url: "/controller/service.con.php",
         data: {funName: "getPassedService", cp: cp},
         type: "get",
         success: function (data) {
@@ -30,7 +30,7 @@ function getAllPassedService() {
                 for (var item in result.serviceInfo) {
                     var src = "../images/upgrade/product.svg";
                     if (result.serviceInfo[item + ""]["company_logo"] != null) {
-                        src = "../../Admin/images/service/" + result.serviceInfo[item + ""]['company_logo'];
+                        src = "../admin/images/service/" + result.serviceInfo[item + ""]['company_logo'];
                     }
 
                     html += "<div class='col-lg-6 col-md-6 col-sm-6'>" +
@@ -143,7 +143,7 @@ function submitApply() {
     }
 
     $.ajax({
-        url: "/intelshare/controller/service.con.php",
+        url: "/controller/service.con.php",
         type: "get",
         data: serializedData + "&funName=addServiceApply",
         success: function (data) {
@@ -208,7 +208,7 @@ function submitRequest() {
     }
 
     $.ajax({
-        url: "/intelshare/controller/service.con.php",
+        url: "/controller/service.con.php",
         type: "get",
         data: serializedData + "&funName=addServiceRequest",
         success: function (data) {

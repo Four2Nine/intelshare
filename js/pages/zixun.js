@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 function getNews() {
     $.ajax({
-        url: "/intelshare/controller/news.con.php",
+        url: "/controller/news.con.php",
         data: {funName: "getNews", cp: cp},
         type: "get",
         success: function (data) {
@@ -33,7 +33,7 @@ function getNews() {
 
                     var src = "../images/upgrade/default.png";
                     if (result.news[item + ""]["image"] != null && result.news[item + ""]["image"] != "") {
-                        src = "../../Admin/images/news/" + result.news[item + ""]['image'];
+                        src = "../admin/images/news/" + result.news[item + ""]['image'];
                     }
 
                     html += "<div class='blog-inner'>" +

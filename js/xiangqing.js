@@ -9,7 +9,7 @@ if (id == null || id.toString().length < 1) {
 }
 
 $.ajax({
-    url: "/intelshare/controller/service.con.php",
+    url: "/controller/service.con.php",
     type: "get",
     data: {i: id, funName: "getServiceDetail"},
     success: function (data) {
@@ -37,7 +37,7 @@ $.ajax({
         var additional = result['detail']['additional'];
 
         if (logo != null && logo != "") {
-            $("#company_logo").prop("src", "../../Admin/images/service/" + logo);
+            $("#company_logo").prop("src", "../admin/images/service/" + logo);
         }
 
         $("#company_name").html(company_name);
@@ -68,7 +68,7 @@ $.ajax({
         }
 
         if (banner_image != null && banner_image != "") {
-            $("#banner_image").prop("src", "../../Admin/images/service/" + banner_image);
+            $("#banner_image").prop("src", "../admin/images/service/" + banner_image);
         } else {
             $("#banner_image").hide();
         }
@@ -76,7 +76,7 @@ $.ajax({
             $("#banner_text").html(banner_text);
         }
         if (detail_image != null && detail_image != "") {
-            $("#detail_image").prop("src", "../../Admin/images/service/" + detail_image);
+            $("#detail_image").prop("src", "../admin/images/service/" + detail_image);
         } else {
             $("#detail_image").hide();
         }
@@ -152,7 +152,7 @@ function submitRequest() {
     }
 
     $.ajax({
-        url: "/intelshare/controller/service.con.php",
+        url: "/controller/service.con.php",
         type: "get",
         data: serializedData + "&funName=addServiceRequest",
         success: function (data) {
@@ -163,7 +163,7 @@ function submitRequest() {
                 swal(errorCode2errorInfo(result.status));
             } else {
                 $.ajax({
-                    url: "/intelshare/controller/service.con.php",
+                    url: "/controller/service.con.php",
                     type: "get",
                     data: {funName: "addRequestCount", id: id},
                     success: function (data) {
