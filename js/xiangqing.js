@@ -26,6 +26,10 @@ $.ajax({
         var industry = result['detail']['industry'];
         var price = result['detail']['service_price'];
 
+        var contact_name = result['detail']['contact_name'];
+        var contact_desc = result['detail']['contact_desc'];
+        var contact2_name = result['detail']['contact2_name'];
+        var contact2_desc = result['detail']['contact2_desc'];
         var banner_image = result['detail']['banner_image'];
         var banner_text = result['detail']['banner_text'];
         var detail_image = result['detail']['service_detail_image'];
@@ -39,11 +43,26 @@ $.ajax({
         $("#company_desc").html(company_desc.substring(0, 20));
         $("#view_count").html(view_count);
         $("#company_website").prop("href", url);
+        $("#contact-name").html(contact_name);
+
+        if (contact_desc != null && contact_desc != "") {
+            $("#contact-desc").html(contact_desc);
+        }
+
+        if (contact2_name != null && contact2_name != "") {
+            $("#contact2-name").html(contact2_name);
+        } else {
+            $("#contact2").hide();
+        }
 
         if (service_type != null && service_type != "") {
             $("#service_type").html(service_type);
         } else {
             $("#service_type").html("无");
+        }
+
+        if (contact2_desc != null && contact2_desc != "") {
+            $("#contact2-desc").html(contact2_desc);
         }
 
         if (banner_image != null && banner_image != "") {
@@ -77,6 +96,7 @@ $.ajax({
         } else {
             $("#price").html("价格: " + price + " 元");
         }
+
 
     }
 });

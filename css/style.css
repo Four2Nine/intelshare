@@ -2286,3 +2286,8 @@ figure {
 #company_name {
     margin-top: 10px !important;
 }
+
+.peopletables {
+    padding: 15px 8px;
+    border-radius: 5px;
+}
