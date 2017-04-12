@@ -305,21 +305,23 @@
                                     <input
                                             type="text"
                                             name="company-name"
+                                            id="company-name-req"
                                             class="form-control"
                                             placeholder="公司名称"
                                             required>
+                                    <small id="company-name-req-error" class="error"></small>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <span class="col-sm-3 control-label">公司规模</span>
                                 <div class="col-sm-9">
-                                    <select class="form-control" title="">
-                                        <option>请选择公司规模</option>
-                                        <option>500人以下</option>
-                                        <option>500-2000人</option>
-                                        <option>2000人以上</option>
+                                    <select class="form-control" title="" name="scale" id="scale">
+                                        <option value="1" selected>500人以下</option>
+                                        <option value="2">500-2000人</option>
+                                        <option value="3">2000人以上</option>
                                     </select>
+                                    <small id="scale-error" class="error"></small>
                                 </div>
                             </div>
 
@@ -328,9 +330,11 @@
                                 <div class="col-sm-9">
                                     <input type="text"
                                            name="industry"
+                                           id="industry-req"
                                            class="form-control"
                                            placeholder="所属行业"
                                            required="">
+                                    <small id="industry-error" class="error"></small>
                                 </div>
                             </div>
 
@@ -339,31 +343,33 @@
                                 <div class="col-sm-9">
                                     <input type="text"
                                            name="city"
+                                           id="city-req"
                                            placeholder="所在城市"
                                            class="form-control"
                                            required="">
+                                    <small id="city-error" class="error"></small>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <span class="col-sm-3 control-label">服务类型</span>
                                 <div class="col-sm-9">
-                                    <input type="email"
+                                    <input type="text"
                                            name="service-type"
+                                           id="service-type"
                                            class="form-control"
                                            placeholder="服务类型"
                                            required="">
+                                    <small id="service-type-error" class="error"></small>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <span class="col-sm-3 control-label">预算</span>
                                 <div class="col-sm-9">
-                                <textarea rows="4"
-                                          class="form-control"
-                                          name="budget"
-                                          placeholder="预算"
-                                          required=""></textarea>
+                                    <input type="number" name="budget" id="budget" class="form-control" placeholder="预算"
+                                           min="0">
+                                    <small id="budget-error" class="error"></small>
                                 </div>
                             </div>
 
@@ -371,7 +377,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">提交需求</button>
+                    <button type="button" class="btn btn-primary" onclick="submitRequest()">提交需求</button>
                 </div>
             </div>
         </div>
@@ -398,6 +404,10 @@
 <script src="../js/jquery.countTo.js"></script>
 <script src="../js/material.min.js"></script>
 <!-- Main JS (Do not remove) -->
+
+<!-- SweetAlert Plugin Js -->
+<script src="../js/sweetalert.min.js"></script>
+
 <script src="../js/main.js"></script>
 <script src="../js/xiangqing.js"></script>
 

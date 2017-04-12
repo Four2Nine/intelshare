@@ -21,6 +21,7 @@ $.ajax({
         var url = result['detail']['company_website'];
         var company_desc = result['detail']['service_description'];
         var view_count = result['detail']['view_count'];
+        var request_count = result['detail']['request_count'];
         var service_type = result['detail']['service_type'];
         var city = result['detail']['service_city'];
         var industry = result['detail']['industry'];
@@ -42,6 +43,7 @@ $.ajax({
         $("#company_name").html(company_name);
         $("#company_desc").html(company_desc.substring(0, 20));
         $("#view_count").html(view_count);
+        $("#request_count").html(request_count);
         $("#company_website").prop("href", url);
         $("#contact-name").html(contact_name);
 
@@ -100,3 +102,75 @@ $.ajax({
 
     }
 });
+
+function submitRequest() {
+    var serializedData = $("#service-request-form").serialize();
+
+    var name = $("#company-name-req");
+    var scale = $("#scale");
+    var industry = $("#industry-req");
+    var city = $("#city-req");
+    var serviceType = $("#service-type");
+    var budget = $("#budget");
+
+    if (name.val() == "") {
+        $("#company-name-req-error").html("不能为空");
+        return false;
+    } else {
+        $("#company-name-req-error").html("");
+    }
+
+    if (industry.val() == "") {
+        $("#industry-error").html("不能为空");
+        return false;
+    } else {
+        $("#industry-error").html("");
+    }
+
+    if (city.val() == "") {
+        $("#city-error").html("不能为空");
+        return false;
+    } else {
+        $("#city-error").html("");
+    }
+
+    if (serviceType.val() == "") {
+        $("#service-type-error").html("不能为空");
+        return false;
+    } else {
+        $("#service-type-error").html("");
+    }
+
+    if (budget.val() == "") {
+        $("#budget-error").html("不能为空");
+        return false;
+    } else if (budget.val() < 0) {
+        $("#budget-error").html("预算不能为负数")
+        return false;
+    } else {
+        $("#budget-error").html("");
+    }
+
+    $.ajax({
+        url: "/intelshare/controller/service.con.php",
+        type: "get",
+        data: serializedData + "&funName=addServiceRequest",
+        success: function (data) {
+            var result = JSON.parse(data);
+
+            $("#serviceRequestModal").modal('hide');
+            if (result.status != CORRECT) {
+                swal(errorCode2errorInfo(result.status));
+            } else {
+                $.ajax({
+                    url: "/intelshare/controller/service.con.php",
+                    type: "get",
+                    data: {funName: "addRequestCount", id: id},
+                    success: function (data) {
+                        swal("已提交咨询");
+                    }
+                });
+            }
+        }
+    })
+}

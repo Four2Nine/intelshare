@@ -27,6 +27,9 @@ switch ($funName) {
     case 'getServiceDetail':
         getServiceDetail((int)$_GET['i']);
         break;
+    case 'addRequestCount':
+        addRequestCount((int)$_GET['id']);
+        break;
     default:
         echo json_encode(array());
 }
@@ -225,5 +228,17 @@ function getServiceDetail($i)
     $result['detail'] = $stmt->fetchObject();
 
     echo json_encode($result);
+    exit;
+}
+
+function addRequestCount($i)
+{
+    $con = PDOConnect();
+    $sql = "UPDATE `tb_service` SET `request_count` = `request_count` + 1 WHERE `id`=?";
+    $stmt = $con->prepare($sql);
+
+    $stmt->bindParam(1, $i, PDO::PARAM_INT);
+    $stmt->execute();
+    echo 1;
     exit;
 }

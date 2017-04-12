@@ -7,7 +7,6 @@ $.ajax({
     success: function (data) {
         var result = JSON.parse(data);
         var html = "";
-        console.log(result);
 
         for (var item in result.staff) {
             var src = "../images/upgrade/product.svg";
@@ -22,15 +21,3 @@ $.ajax({
         $("#contact-item").after(html);
     }
 });
-
-/*
-
- <a href="#" class="portfolio-grid-item" style="background-image: url(../images/project-5.jpg);">
- <div class="desc2">
- <h3>姓名</h3>
- <span>职位</span>
- <i class="sl-icon-heart"></i>
- </div>
- </a>
-
- */
